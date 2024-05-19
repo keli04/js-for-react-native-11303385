@@ -33,4 +33,12 @@ function processArray(arr) {
       return formattedStrings;
     }
 
+    const originalStrings = ["That”,  “Super”, “And”, “Chair”, “Amanda"];
+    const processedNumbers = [10, 21, 15, 21, 41]; 
+    
+    const formattedStrings = formatArrayStrings(originalStrings, processedNumbers);
+    
+    console.log("Original Strings:", originalStrings);
+    console.log("Formatted Strings:", formattedStrings);
+
   
