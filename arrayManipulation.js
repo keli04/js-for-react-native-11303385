@@ -14,4 +14,23 @@ function processArray(arr) {
   
     return newArr;
   }
+
+  let inputArray = [10, 21, 15, 21, 41];
+  let outputArray = processArray(inputArray);
+  console.log(outputArray); 
+
+  function formatArrayStrings(Strings, Numbers) {
+      const formattedStrings = [];
+      for (let i = 0; i < Strings.length; i++) {
+        const string = Strings[i];
+        const number = Numbers[i];
+        if (number % 2 === 0) {
+          formattedStrings.push(string.toUpperCase());
+        } else {
+          formattedStrings.push(string.toLowerCase());
+        }
+      }
+      return formattedStrings;
+    }
+
   
